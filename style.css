@@ -8,6 +8,45 @@
 body{
     display: flex;
     justify-content: center;
+    position: relative;
+}
+.won{
+    
+    position: absolute;
+    font-size: 2rem;
+    bottom: 4rem;
+    opacity: 0;
+    animation: moveBanner 1s forwards;
+    z-index: 100;
+    
+}
+
+@keyframes moveBanner {
+    0%{transform: translateY(5rem);
+
+    }
+    100%{
+        transform: translateY(-4rem) scale(1.5);
+        opacity: 1;
+    }
+    
+}
+.setSize{
+    position: absolute;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    top: 5rem;
+    
+}
+.setSize button{
+    padding: 1rem 3rem;
+    background-color: blueviolet;
+    border-radius: 5px;
+    font-size: 2rem;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    z-index: 10;
 }
 
 :root{
@@ -24,10 +63,12 @@ body{
     grid-template-rows: repeat(var(--rows),1fr);
     justify-items: center;
     align-items: center;
+    position: relative;
 }
  .card{
     width:7rem;
     height: 8rem;
+    transition: .5s;
     border-radius: 5px;
     background-color: black;
     position: relative;
