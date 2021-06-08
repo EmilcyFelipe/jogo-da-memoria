@@ -66,6 +66,20 @@ body{
     align-items: center;
     position: relative;
 }
+@media(max-width:600px){
+    .container{
+        grid-template-columns: repeat(calc(3),1fr);
+        grid-template-rows: repeat(var(--rows),1fr);
+        height: auto;
+    }
+}
+@media(max-width:470px){
+    .container{
+        grid-template-columns: repeat(calc(2),1fr);
+        grid-template-rows: repeat(var(--rows),1fr);
+        height: auto;
+    }
+}
  .card{
     width:7rem;
     height: 8rem;
