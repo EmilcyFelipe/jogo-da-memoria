@@ -2,6 +2,8 @@
 
 Jogo da memória com possibilidade de expansão
 
+![jogo_da_memoria](https://github.com/EmilcyFelipe/jogo-da-memoria/blob/master/jogo_da_memoria.png)
+
 ## Funcionamento
  
     -O projeto foi construído possibilitando a fácil expansão da quantidade de cartas,
