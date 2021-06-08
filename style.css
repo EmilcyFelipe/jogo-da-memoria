@@ -1,4 +1,5 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Mandali&display=swap');
 
 *{
     margin: 0;
@@ -11,7 +12,7 @@ body{
     position: relative;
 }
 .won{
-    
+    font-family: "Mandali", sans-serif;
     position: absolute;
     font-size: 2rem;
     bottom: 4rem;
@@ -42,7 +43,7 @@ body{
 }
 .setSize button{
     padding: 1rem 3rem;
-    background-color: blueviolet;
+    background-color: rgb(71, 60, 107);
     border-radius: 5px;
     font-size: 2rem;
     cursor: pointer;
@@ -50,15 +51,15 @@ body{
 }
 
 :root{
-    --rows:4;
-    --columns:3;
+    --rows:5;
+    --columns:4;
     
 }
 .container{
     width: 80vw;
     height: 100vh;
-    background-color: rgb(244, 250, 190);
-    display: grid;
+    background-color: rgb(154, 155, 151);
+    display: grid ;
     grid-template-columns: repeat(var(--columns),1fr);
     grid-template-rows: repeat(var(--rows),1fr);
     justify-items: center;

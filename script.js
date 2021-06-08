@@ -1,6 +1,6 @@
 let deck = document.querySelector(".container");
 //icones disponiveis
-let dataCards=["<i class='fas fa-dog'></i>","<i class='fas fa-dove'></i>","<i class='fas fa-fish'></i>","<i class='fas fa-dragon'></i>","<i class='fas fa-horse'></i>","<i class='fas fa-spider'></i>","<i class='fas fa-crow'></i>"];
+let dataCards=["<i class='fas fa-dog'></i>","<i class='fas fa-dove'></i>","<i class='fas fa-fish'></i>","<i class='fas fa-dragon'></i>","<i class='fas fa-horse'></i>","<i class='fas fa-spider'></i>","<i class='fas fa-crow'></i>","<i class='fas fa-hippo'></i>","<i class='fas fa-frog'></i>","<i class='fas fa-cat'></i>"];
 let nCards=0;
 
 //Usuário define o tamanho do deck
