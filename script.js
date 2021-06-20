@@ -71,12 +71,11 @@ let winner =0;
 //gira carta por partida
 function flipIn(){
     cardsToMatch.push(event.target);
+    event.target.removeEventListener(("click"),flipIn);
     event.target.classList.add("flip");
     if(cardsToMatch.length==2){
         let matches = match();
         if(matches==true){
-            cardsToMatch[0].removeEventListener(("click"),flipIn);
-            cardsToMatch[1].removeEventListener(("click"),flipIn);
             cardsToMatch=[];
             winner++
             if(winner==nCards/2){
@@ -85,14 +84,15 @@ function flipIn(){
 
         }else{
             var cardsToFlip = cardsToMatch;
+            cardsToMatch.forEach((card) =>{
+                card.addEventListener(("click"), flipIn);
+            });
             cardsToMatch=[];
             console.log(cardsToFlip);
             setTimeout(()=>{cardsToFlip[0].classList.remove("flip");
             cardsToFlip[1].classList.remove("flip");
         },1000);
-
         }
-    
     }
 }
 
